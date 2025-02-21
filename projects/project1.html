@@ -5,6 +5,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Project 1 - Portfolio</title>
   <link rel="stylesheet" href="../styles.css">
+  <!-- Spline 3D Viewer Script -->
+  <script type="module" src="https://unpkg.com/@splinetool/viewer@1.9.69/build/spline-viewer.js"></script>
 </head>
 <body>
   <header>
@@ -15,9 +17,13 @@
   </header>
   <section class="project-detail">
     <h1>Project 1</h1>
+    <!-- Embedded Spline 3D Viewer -->
+    <spline-viewer 
+      url="https://prod.spline.design/Yh9yPTk14OWYA0Kw/scene.splinecode"
+      style="width: 100%; height: 60vh;">
+    </spline-viewer>
     <img src="../assets/project1.jpg" alt="Project 1">
-    <p>Description of Project 1 goes here. You can include details about the project, technologies used, and any other relevant information.</p>
-    <!-- Additional project details -->
+    <p>Description of Project 1 goes here. Include details about the project, technologies used, and any other relevant information.</p>
   </section>
 </body>
 </html>
