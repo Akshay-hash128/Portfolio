@@ -6,66 +6,30 @@
     <title>Portfolio</title>
     <link rel="stylesheet" href="styles.css">
     <script defer src="script.js"></script>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
 </head>
 <body>
-
-    <!-- Loading Screen -->
-    <div id="loading-screen">
-        <div class="spinner"></div>
-    </div>
-
-    <!-- Navigation Bar -->
-    <nav>
-        <div class="logo">Portfolio</div>
-        <ul>
-            <li><a href="#projects">Projects</a></li>
-            <li><a href="#contact">Contact</a></li>
-        </ul>
-    </nav>
-
-    <!-- Introduction Section -->
     <section id="intro">
-        <h1>Welcome to My Portfolio</h1>
-        <p>Showcasing my projects and skills.</p>
-    </section>
-
-    <!-- Projects Section -->
-    <section id="projects">
-        <h2>Projects</h2>
-        <div class="project-container">
-            <div class="project-card">
-                <h3>Cycloidal Gearbox</h3>
-                <a href="#project1">View</a>
-            </div>
-            <div class="project-card">
-                <h3>Microbit Extension</h3>
-                <a href="#project2">View</a>
-            </div>
-            <div class="project-card">
-                <h3>Abenics Spherical Gear</h3>
-                <a href="#project3">View</a>
-            </div>
+        <div class="intro-content">
+            <h1>Welcome to My Portfolio</h1>
+            <p>Showcasing my projects and work</p>
+            <button onclick="scrollToProjects()">View Projects</button>
         </div>
     </section>
 
-    <!-- Project Details -->
-    <section id="project1" class="project-details">
-        <h2>Cycloidal Gearbox</h2>
-        <div id="model-viewer"></div> <!-- Placeholder for 3D Model -->
-        <p>Description of the Cycloidal Gearbox...</p>
+    <section id="projects">
+        <h2>Projects</h2>
+        <div class="carousel">
+            <div class="carousel-track">
+                <div class="card">
+                    <img src="assets/project1.jpg" alt="Project 1">
+                    <a href="projects/project1.html">Project 1</a>
+                </div>
+                <div class="card">
+                    <img src="assets/project2.jpg" alt="Project 2">
+                    <a href="projects/project2.html">Project 2</a>
+                </div>
+            </div>
+        </div>
     </section>
-
-    <!-- Contact Form -->
-    <section id="contact">
-        <h2>Contact Me</h2>
-        <form action="https://formspree.io/f/{your_form_id}" method="POST">
-            <input type="text" name="name" placeholder="Your Name" required>
-            <input type="email" name="email" placeholder="Your Email" required>
-            <textarea name="message" placeholder="Your Message" required></textarea>
-            <button type="submit">Send</button>
-        </form>
-    </section>
-
 </body>
 </html>
