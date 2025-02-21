@@ -12,12 +12,16 @@ nav {
   background-color: #222;
   padding: 1rem;
   display: flex;
-  justify-content: flex-start;
   gap: 1rem;
 }
 nav a {
   color: #fff;
   text-decoration: none;
+}
+
+/* Fullscreen Sections */
+section {
+  width: 100%;
 }
 
 /* Intro Section */
@@ -49,12 +53,29 @@ button:hover {
   background: #ff4b4b;
 }
 
-/* Projects Section (on index.html and projects.html) */
-#projects, #projects-page {
-  padding: 50px;
-  text-align: center;
+/* Projects Section on index.html */
+#projects {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
 }
-#projects h2, #projects-page h1 {
+.projects-header h2 {
+  margin-bottom: 2rem;
+}
+
+/* Projects Page (projects.html) */
+#projects-page {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+}
+#projects-page .projects-header h1 {
   margin-bottom: 2rem;
 }
 
@@ -63,6 +84,7 @@ button:hover {
   overflow-x: auto;
   white-space: nowrap;
   padding-bottom: 1rem;
+  width: 100%;
 }
 .carousel-track {
   display: inline-flex;
