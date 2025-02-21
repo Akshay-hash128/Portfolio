@@ -1,93 +1,100 @@
+/* Global Styles */
 body {
-    font-family: Arial, sans-serif;
-    background-color: #121212;
-    color: #ffffff;
-    margin: 0;
-    padding: 0;
-    scroll-behavior: smooth;
-}
-
-/* Loading Screen */
-#loading-screen {
-    position: fixed;
-    width: 100%;
-    height: 100%;
-    background: #000;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-.spinner {
-    width: 50px;
-    height: 50px;
-    border: 5px solid #444;
-    border-top: 5px solid #fff;
-    border-radius: 50%;
-    animation: spin 1s linear infinite;
-}
-@keyframes spin {
-    from { transform: rotate(0deg); }
-    to { transform: rotate(360deg); }
+  margin: 0;
+  font-family: 'Arial', sans-serif;
+  background-color: #121212;
+  color: #fff;
+  scroll-behavior: smooth;
 }
 
 /* Navigation */
 nav {
-    display: flex;
-    justify-content: space-between;
-    padding: 1rem 2rem;
-    background: #222;
+  background-color: #222;
+  padding: 1rem;
+  display: flex;
+  justify-content: flex-start;
+  gap: 1rem;
 }
-nav .logo {
-    font-size: 1.5rem;
-}
-nav ul {
-    list-style: none;
-    display: flex;
-}
-nav ul li {
-    margin: 0 1rem;
-}
-nav ul li a {
-    color: #fff;
-    text-decoration: none;
+nav a {
+  color: #fff;
+  text-decoration: none;
 }
 
-/* Sections */
-section {
-    padding: 4rem;
-    text-align: center;
+/* Intro Section */
+#intro {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
 }
-.project-container {
-    display: flex;
-    justify-content: center;
-    gap: 20px;
+.intro-content h1 {
+  font-size: 3rem;
+  margin-bottom: 0.5rem;
 }
-.project-card {
-    background: #333;
-    padding: 1rem;
-    border-radius: 8px;
+.intro-content p {
+  font-size: 1.2rem;
+  margin-bottom: 1rem;
 }
-.project-card a {
-    color: cyan;
-    text-decoration: none;
+button {
+  padding: 10px 20px;
+  background: #ff6b6b;
+  border: none;
+  color: white;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+button:hover {
+  background: #ff4b4b;
 }
 
-/* Contact Form */
-form {
-    display: flex;
-    flex-direction: column;
-    max-width: 400px;
-    margin: auto;
+/* Projects Section (on index.html and projects.html) */
+#projects, #projects-page {
+  padding: 50px;
+  text-align: center;
 }
-form input, form textarea {
-    margin-bottom: 10px;
-    padding: 10px;
-    border: none;
-    border-radius: 5px;
+#projects h2, #projects-page h1 {
+  margin-bottom: 2rem;
 }
-form button {
-    padding: 10px;
-    background: cyan;
-    border: none;
-    cursor: pointer;
+
+/* Carousel Styles */
+.carousel {
+  overflow-x: auto;
+  white-space: nowrap;
+  padding-bottom: 1rem;
+}
+.carousel-track {
+  display: inline-flex;
+}
+.card {
+  background: #222;
+  border-radius: 8px;
+  margin: 0 10px;
+  padding: 20px;
+  min-width: 200px;
+  text-align: center;
+  flex-shrink: 0;
+}
+.card img {
+  max-width: 100%;
+  border-radius: 4px;
+}
+.card a {
+  display: block;
+  margin-top: 10px;
+  color: #ff6b6b;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+/* Individual Project Detail Page */
+.project-detail {
+  padding: 50px;
+  text-align: center;
+}
+.project-detail img {
+  max-width: 80%;
+  margin: 20px 0;
+  border-radius: 8px;
 }
