@@ -103,7 +103,7 @@ button:hover {
 
 /* Adjust images on the cards to fit the box properly */
 .card img {
-  width: 100%;
+  width: 50%;
   height: 100px;  /* Fixed height to maintain consistent card sizes */
   object-fit: cover;
   display: flex;
