@@ -95,26 +95,26 @@ button:hover {
   border-radius: 8px;
   margin: 0 10px;
   padding: 20px;
-  width: 250px;
+  width: 250px; /* Maintain consistent card width */
   overflow: hidden;
   flex-shrink: 0;
   text-align: center;
 }
 
-/* Adjust images on the cards to fit the box properly */
 .card img {
-  width: 50%;
-  height: 100px;  /* Fixed height to maintain consistent card sizes */
-  object-fit: cover;
-  display: flex;
+  width: 100%; /* Ensures full width inside the card */
+  height: 140px; /* Adjusted height for balanced display */
+  object-fit: cover; /* Ensures images fill the space without distortion */
+  display: block;
   border-radius: 4px;
 }
+
 
 .card a {
   display: flex;
   margin-top: 10px;
   color: #ff6b6b;
-  text-decoration: none;
+  text-decoration: solid;
   font-weight: bold;
 }
 
@@ -124,7 +124,10 @@ button:hover {
   text-align: center;
 }
 .project-detail img {
-  max-width: 80%;
+  width: 80%; /* Makes the image take up most of the screen */
+  max-width: 800px; /* Prevents excessive size on large screens */
+  height: auto; /* Maintains aspect ratio */
   margin: 20px 0;
   border-radius: 8px;
 }
+
