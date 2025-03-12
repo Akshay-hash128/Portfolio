@@ -47,6 +47,27 @@
       <button class="carousel-btn right-btn">&#9655;</button> <!-- Right Arrow Button -->
     </div>
 </section>
+<section id="contact">
+  <div class="contact-header">
+    <h2>Contact Me</h2>
+  </div>
+  <form id="contact-form" class="contact-form">
+    <label for="name">Your Name</label>
+    <input type="text" id="name" name="name" required placeholder="Enter your name">
+
+    <label for="email">Your Email</label>
+    <input type="email" id="email" name="email" required placeholder="Enter your email">
+
+    <label for="message">Your Message</label>
+    <textarea id="message" name="message" required placeholder="Write your message here"></textarea>
+
+    <button type="submit" class="submit-btn">Send Message</button>
+  </form>
+</section>
+
+<!-- EmailJS Script -->
+<script type="text/javascript" src="https://cdn.emailjs.com/dist/email.min.js"></script>
+<script src="script.js"></script>
 
 </body>
 </html>

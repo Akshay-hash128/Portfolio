@@ -61,3 +61,24 @@ document.addEventListener("DOMContentLoaded", function () {
   });
 });
 
+// Initialize EmailJS with your user ID
+emailjs.init('9WyYe4QKIwWznROVw'); // Replace 'YOUR_USER_ID' with the ID from EmailJS
+
+document.getElementById('contact-form').addEventListener('submit', function (e) {
+  e.preventDefault(); // Prevent default form submission
+
+  // Get form data
+  const formData = {
+    name: document.getElementById('name').value,
+    email: document.getElementById('email').value,
+    message: document.getElementById('message').value
+  };
+
+  // Send email using EmailJS
+  emailjs.send('service_nj59a7g', 'service_nj59a7g', formData)
+    .then(function(response) {
+      alert('Message sent successfully!');
+    }, function(error) {
+      alert('Failed to send message, please try again.');
+    });
+});
